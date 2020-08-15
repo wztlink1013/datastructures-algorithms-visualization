@@ -1,14 +1,6 @@
 name: CI for wztlink1013.github.io
 
-on:
-  push:
-    branches:    
-      - master
-    paths:
-      - 'README.md'
-  pull_request:
-    branches:
-      - master
+on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
