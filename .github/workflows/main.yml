@@ -12,22 +12,22 @@ jobs:
       run: | 
         git config --global user.name 'wztlink1013' 
         git config --global user.email '2550374815@qq.com'
-    - name: 在云端进行复制文件夹操作
-      env:
-        Github_Token: ${{ secrets.TOKEN_GITHUBAPI }}
-      run: | 
-        git clone https://${Github_Token}@github.com/wztlink1013/visualization visualization
-        git clone https://${Github_Token}@github.com/wztlink1013/wztlink1013.github.io .github_pages
-        cd visualization
-        rm -r .git
-        rm -r .github
-        cd ..
-        cd .github_pages
-        rm -r visualization
-        cd ..
-        mv visualization/ -f .github_pages/
-        cd .github_pages
-        git status
-        git add .
-        git commit -m "add gh-pages files from visualization"
-        git push --force --quiet "https://${Github_Token}@github.com/wztlink1013/wztlink1013.github.io"  master:master
+#     - name: 在云端进行复制文件夹操作
+#       env:
+#         Github_Token: ${{ secrets.TOKEN_GITHUBAPI }}
+#       run: | 
+#         git clone https://${Github_Token}@github.com/wztlink1013/visualization visualization
+#         git clone https://${Github_Token}@github.com/wztlink1013/wztlink1013.github.io .github_pages
+#         cd visualization
+#         rm -r .git
+#         rm -r .github
+#         cd ..
+#         cd .github_pages
+#         rm -r visualization
+#         cd ..
+#         mv visualization/ -f .github_pages/
+#         cd .github_pages
+#         git status
+#         git add .
+#         git commit -m "add gh-pages files from visualization"
+#         git push --force --quiet "https://${Github_Token}@github.com/wztlink1013/wztlink1013.github.io"  master:master
