@@ -1,7 +1,7 @@
 # visualization
 DataStructures and Algorithms visualization 
 
-https://wztlink1013.com/visualization/index.html
+[https://wztlink1013.com/visualization/index.html](https://www.wztlink1013.com/datastructures-algorithms-visualization/)
 
 
 ### GitHub Actions Code
@@ -22,12 +22,12 @@ jobs:
     - name: Set up git
       run: | 
         git config --global user.name 'wztlink1013' 
-        git config --global user.email '2550374815@qq.com'
+        git config --global user.email 'wztlink1013@163.com'
     - name: deal with forder
       env:
         Github_Token: ${{ secrets.TOKEN_GITHUBAPI }}
       run: | 
-        git clone https://${Github_Token}@github.com/wztlink1013/visualization visualization
+        git clone https://${Github_Token}@github.com/wztlink1013/datastructures-algorithms-visualization visualization
         git clone https://${Github_Token}@github.com/wztlink1013/wztlink1013.github.io .github_pages
         cd visualization
         rm -r .git
