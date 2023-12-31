@@ -1,7 +1,7 @@
 # visualization
 DataStructures and Algorithms visualization 
 
-[https://wztlink1013.com/visualization/index.html](https://www.wztlink1013.com/datastructures-algorithms-visualization/)
+[https://www.wztlink1013.com/datastructures-algorithms-visualization/](https://www.wztlink1013.com/datastructures-algorithms-visualization/)
 
 
 ### GitHub Actions Code
